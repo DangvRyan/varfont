@@ -1,0 +1,264 @@
+@font-face {
+    src: url("fonts/IndoorKid.woff2") format("woff2-variations");
+    font-family: "IndoorKid";
+    font-style: normal;
+    font-weight: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: none;
+}
+
+body {
+    font-family: "IndoorKid";
+    font-variation-settings:
+        "wght" 300, "wdth" 100, "slnt" 0, "EMPH" 100;
+    letter-spacing: .1em;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    width: 100%;
+    margin: 0em auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+/* Home Button */
+
+.logo {
+    font-variation-settings:
+    "wght" 700, "wdth" 100, "slnt" 0, "EMPH" 100;
+    color: white;
+    text-wrap: nowrap;
+    font-size: 2em;
+    margin: 0.7em 1em;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    font-variation-settings:
+    "wght" 700, "wdth" 100, "slnt" 0, "EMPH" 125;
+    color: rgb(255, 242, 126);
+}
+
+/* Header Navbar */
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+li a {
+    padding: 0em 1em;
+    font-variation-settings: 
+        "wght" 700, "wdth" 100, "slnt" 0, "EMPH" 100;
+    color: white;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+a:hover {
+    font-variation-settings: 
+        "wght" 700, "wdth" 100, "slnt" 0, "EMPH" 125;
+    color: rgb(255, 242, 126);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(233, 0, 0);
+    margin: 0em;
+    grid-column: 1 / 3;
+}
+
+.hero {
+    grid-column: 1 / 3;
+    width: 100%;
+    background-color: rgb(255, 242, 126);
+    background-image: url(assets/background.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.display {
+    min-width: fit-content;
+    max-width: 50%;
+    padding: 1.5em 0.5em;
+    border: 10px solid black;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-variation-settings:
+    "wght" 450, "wdth" 100, "slnt" -20, "EMPH" 100;
+    color: black;
+    font-size: 4.5em;
+    margin: 2em auto;
+    animation: showcase 7s infinite ease-in-out;
+}
+
+/* Hero Animation */
+
+@keyframes showcase {
+    0%, 100% {
+        font-variation-settings:
+        "wght" 450, "wdth" 100, "slnt" -20, "EMPH" 100;
+    }
+    50% {
+        font-variation-settings:
+        "wght" 700, "wdth" 130, "slnt" 0, "EMPH" 125;
+    }
+}
+
+#variations {
+    background-color: rgb(233, 0, 0);
+}
+
+#variations ul {
+    display: block;
+    text-align: right;
+    padding: 5em;
+}
+
+#variations ul li{
+    font-size: 3em;
+    text-align: right;
+    padding: 1em 1em;
+    color: white;
+}
+
+.text {
+    grid-column: 2 / 3;
+    padding: 6em 15em 4em 5em;
+    line-height: 1.3em;
+    letter-spacing: 0.05em;
+}
+
+.text h1 {
+    font-size: 4em;
+}
+
+/* Axis Presentation */
+
+.weight {
+    animation: weightChange 3s infinite ease-in-out;
+}
+
+.width {
+    animation: widthChange 3s infinite ease-in-out;
+}
+
+.slant {
+    animation: slantChange 3s infinite ease-in-out;
+}
+
+.emphasis {
+    animation: weightChange 3s infinite ease-in-out;
+}
+
+@keyframes weightChange {
+    0%, 100% {
+        font-variation-settings:
+        "wght" 300, "wdth" 100, "slnt" 0, "EMPH" 100;
+    }
+    50% {
+        font-variation-settings:
+        "wght" 700, "wdth" 100, "slnt" 0, "EMPH" 100;
+    }
+}
+
+@keyframes widthChange {
+    0%, 100% {
+        font-variation-settings:
+        "wght" 300, "wdth" 70, "slnt" 0, "EMPH" 100;
+    }
+    50% {
+        font-variation-settings:
+        "wght" 300, "wdth" 130, "slnt" 0, "EMPH" 100;
+    }
+}
+@keyframes slantChange {
+    0%, 100% {
+        font-variation-settings:
+        "wght" 300, "wdth" 100, "slnt" 0, "EMPH" 100;
+    }
+    50% {
+        font-variation-settings:
+        "wght" 300, "wdth" 100, "slnt" -20, "EMPH" 100;
+    }
+}
+
+button {
+    font-family: "IndoorKid";
+    font-size: 1.5em;
+    padding: 0.5em;
+    color: white;
+    background-color: rgb(233, 0, 0);
+    border-radius: 5px;
+    border: 0em solid transparent;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    color: rgb(255, 242, 126);
+}
+
+#characters {
+    grid-column: 1 / 3;
+    width: 100%;
+    font-size: 4em;
+    background-color:rgb(255, 242, 126);
+    text-align: center;
+    margin: auto;
+}
+#characters p {
+    font-size: 0.8em;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(233, 0, 0);
+    width: 100%;
+    color: white;
+    grid-column: 1 / 3;
+}
+
+footer p {
+    padding: 1em;
+}
+
+/* Media Query */
+
+@media only screen and (max-width 768px) {
+
+* {
+    color: aqua;
+    background-color: aqua;
+}
+
+body .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    align-items: center;
+}
+header{
+    grid-column: 1 / 2;
+}
+
+}
