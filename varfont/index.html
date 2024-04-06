@@ -10,18 +10,26 @@
     <section class="wrapper">
     <header>
         <a href="index.html" class="logo">Indoor Kid</a>
-        <ul>
-            <li>
-                <a href="#variations">Variations</a>
-            </li>
-            <li>
-                <a href="#history">History</a>
-            </li>
-            <li>
-                <a href="#characters">Characters</a>
-            </li>
-
-        </ul>
+        <span id="nav-label" hidden>Navigation</span>
+        <button class="obutton" id='btnOpen' aria-expanded="false" aria-labeledby="nav-label">
+            <img src="assets/X.png" alt="" width="50" height="50">
+        </button>
+        <nav role="dialog">
+            <ul>
+                <button class="xbutton" aria-labeledby="nav-label">
+                    <img src="assets/X.png" alt="" width="50" height="50">
+                </button>
+                <li>
+                    <a href="#history">History</a>
+                </li>
+                <li>
+                    <a href="#variations">Variations</a>
+                </li>
+                <li>
+                    <a href="#characters">Characters</a>
+                </li>
+            </ul>
+         </nav>
     </header>
 
         <section class="hero">
@@ -60,7 +68,7 @@
             <br>
             !"#$%^&*'()*+,-./:;<=>?@[\]_`{|}
             <br>
-            ABCDEFGHIJKLMN<br>OPQRSTUVWXYZ
+            ABCDEFGHIJKLMNOPQRSTUVWXYZ
         </p>
     </section>
     
