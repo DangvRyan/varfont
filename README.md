@@ -1,0 +1,3 @@
+## Ryan Dang Variable Type Specimen
+
+Utilizing David Jonathan Ross's generosity with his Font of the Month subscription, I showcase some of the variable options for the font, Indoor Kid. I used CSS grid to lay out the different sections and added keyframes to animate the variable axis for the font. I used flexbox to build the header and footer of the page and used media queries to make the website fit in a mobile view.
