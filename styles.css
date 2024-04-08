@@ -3,6 +3,7 @@
     font-family: "IndoorKid";
     font-style: normal;
     font-weight: normal;
+    overflow-x: hidden;
 }
 
 html {
@@ -275,6 +276,11 @@ header ul{
         font-variation-settings:
         "wght" 600, "wdth" 100, "slnt" 0, "EMPH" 110;
     }
+}
+
+.display {
+    max-width: 80%;
+    min-width: auto;
 }
 
 .text {
